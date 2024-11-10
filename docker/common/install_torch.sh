@@ -61,3 +61,6 @@ else
         && conda config --env --remove-key channels  \
         && rm -fr ~/.cache 
 fi
+
+# Add conda kernel
+python -m ipykernel install --user --name vitis-ai-pytorch --display-name "vitis-ai-pytorch"
